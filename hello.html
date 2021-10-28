@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vi du</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Đăng ký thông tin</h1>
+  <form action="/action_page.php">
+    <!-- accout -->
+    <label for="user">User name:</label>
+    <input type="text" id="user" name="user" ><br>
+    <label for="Password">Password:</label>
+    <input type="text" id="Password" name="Password" ><br>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" ><br>
+    <!-- ngay sinh -->
+    <label for="cars">Ngày sinh:</label>
+    <label for="cars">Ngày:</label>
+    <select id="cars" name="cars">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+      <option value="21">21</option>
+      <option value="22">22</option>
+      <option value="23">23</option>
+      <option value="24">24</option>
+      <option value="25">25</option>
+      <option value="26">26</option>
+      <option value="27">27</option>
+      <option value="28">28</option>
+      <option value="29">29</option>
+      <option value="30">30</option>
+      <option value="31">31</option>
+    </select>
+    <label for="cars">Tháng:</label>
+    <select id="cars" name="cars">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>      
+    </select>
+    <label for="cars">Năm:</label>
+    <select id="cars" name="cars">
+      <option value="1998">1998</option>
+      <option value="1999">1999</option>
+      <option value="2000">2000</option>
+      <option value="2001">2001</option>            
+    </select>
+    <!-- Gioi tinh     -->
+    <p>Giới tính:</p>
+    <input type="radio" id="nam" name="fav_language" value="Nam">
+    <label for="nam">Nam</label>
+    <input type="radio" id="nu" name="fav_language" value="Nu">
+    <label for="nu">Nữ</label><br>
+    
+    <!-- Tinh/Thanh pho -->
+    <label for="cars">Tỉnh/Thành phố</label>
+    <select id="cars" name="cars">
+      <option value="Hà Nội">Hà Nội</option>
+      <option value="Cần Thơ">Cần Thơ</option>
+      <option value="Hải Dương">Hải Dương</option>
+      <option value="TP.Hồ Chí Minh">TP.Hồ Chí Minh</option>            
+    </select>
+    <!-- so thich -->
+    <p>Sở thích:</p>
+    <input type="radio" id="thethao" name="fav_language" value="Thể thao">
+    <label for="thethao">Thể thao</label>
+    <input type="radio" id="nghenhac" name="fav_language" value="Nghe nhạc">
+    <label for="nghenhac">Nghe nhạc</label>
+    <input type="radio" id="muasam" name="fav_language" value="Mua sắm">
+    <label for="muasam">Mua sắm</label>
+    <input type="radio" id="dulich" name="fav_language" value="Du lịch">
+    <label for="dulich">Du lịch</label>
+    <br>
+    <!-- mo ta -->
+    <p>Mô tả bản thân</p>
+    <textarea name="message" style="width:200px; height:200px;"></textarea>
+  <br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="reset">
+    
+    </form> 
+    <!-- messenger -->
+<!-- Messenger Plugin chat Code -->
+<div id='fb-root'></div>
+<!-- Your Plugin chat code -->
+<div class='fb-customerchat' id='fb-customer-chat'>
+</div>
+<script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "101967875590739");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v12.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+</body>
+
+</html>
